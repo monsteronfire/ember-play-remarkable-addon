@@ -1,15 +1,15 @@
+'use strict';
+
 /*jshint node:true*/
+
 module.exports = {
-  description: ''
+  description: '',
 
-  // locals: function(options) {
-  //   // Return custom template variables here.
-  //   return {
-  //     foo: options.entity.options.foo
-  //   };
-  // }
+  normalizeEntityName: function() {
+    //
+  },
 
-  // afterInstall: function(options) {
-  //   // Perform extra work here.
-  // }
+  afterInstall: function() {
+    return this.addBowerPackageToProject('remarkable');
+  }
 };
